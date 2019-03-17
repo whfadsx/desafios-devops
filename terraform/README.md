@@ -8,7 +8,7 @@ Extras feito
 ## Instruções de uso
 
 É utilizado o arquivo idwall.auto.tfvars para configuração das variáveis na construção dos recursos. <br>
-Esse terraform constrói toda infra necessária para o deploy da EC2, se necessário lançar a EC2 em uma infra legada, é preciso mudar a variável <i> create_enabled </i> para <i><b>false</i></b>.
+Esse terraform constrói toda infra necessária para o deploy da EC2, se necessário lançar a EC2 em uma infra legada, é preciso mudar a variável <i> create_enabled </i> para <i><b>false</b></i>, e prover os dados necessários (vpc_id, subnets, etc.) no arquivo <i>main.tf</i> nos módulos que utilizam esses dados.
 
 ## Dependências
 - git
